@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohit — Mechatronics Engineer & Game Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ════ NAVBAR ════ -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">M<span class="logo-dot">.</span></a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#skills">Skills</a>
+      <a href="#lab">Lab</a>
+      <a href="#contact" class="nav-hire">Hire Me</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ════ HERO ════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text" aria-hidden="true">MOHIT</div>
+    <div class="hero-content">
+      <p class="hero-greeting"><span class="greeting-line"></span> Hello, I'm</p>
+      <h1 class="hero-name">Mohit</h1>
+      <div class="typewriter-wrap">
+        <span class="typewriter-prefix">I build </span>
+        <span class="typewriter-text" id="typewriter"></span>
+        <span class="typewriter-cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        First-year Mechatronics Engineering student at <strong>IIIT BH</strong>, 
+        bridging the gap between physical robotics and digital worlds.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-red">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-badges">
+        <span><i class="fa-solid fa-trophy"></i> Award-Winning Robotics</span>
+        <span><i class="fa-solid fa-gamepad"></i> Enyugma '26 Prize</span>
+        <span><i class="fa-solid fa-star"></i> CodeChef 2★ · 1445</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> SGPA 8.13</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-dot"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ════ ABOUT ════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="s-num">01</span>
+        <h2>About <em>Me</em></h2>
+        <div class="s-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-reveal>
+          <p>I'm a first-year <strong>Mechatronics Engineering & Automation</strong> student at IIIT BH, driven by the challenge of building machines that think, move, and respond. My work spans hardware design and software systems — from award-winning autonomous robots to a prize-winning game.</p>
+          <p>I believe the best engineers think across domains. Competitive programming sharpens problem structure. Robotics teaches real-world constraints. Game development builds intuition for real-time systems and state management.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <strong>8.13</strong>
+              <span>SGPA · Sem 1</span>
+            </div>
+            <div class="stat">
+              <strong>1445</strong>
+              <span>CodeChef Rating</span>
+            </div>
+            <div class="stat">
+              <strong>3+</strong>
+              <span>Projects Built</span>
+            </div>
+            <div class="stat">
+              <strong>2</strong>
+              <span>Awards Won</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-edu" data-reveal>
+          <h3>Education</h3>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+            <div>
+              <strong>B.Tech — Mechatronics Engg. & Automation</strong>
+              <span>IIIT BH · 2025 – 2029</span>
+              <span class="edu-mark">SGPA 8.13 · Semester I</span>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fa-solid fa-book-open"></i></div>
+            <div>
+              <strong>Senior Secondary — PCM</strong>
+              <span>Class XII Boards · 2022–2024</span>
+              <span class="edu-mark">92%</span>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+            <div>
+              <strong>Secondary Education</strong>
+              <span>Class X Boards · 2012–2022</span>
+              <span class="edu-mark">96%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ PROJECTS ════ -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <span class="s-num">02</span>
+        <h2>Featured <em>Projects</em></h2>
+        <div class="s-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="proj-card" data-reveal>
+          <div class="proj-card-top">
+            <div class="proj-icon-wrap"><i class="fa-solid fa-robot"></i></div>
+            <span class="status-badge status-done">Completed</span>
+          </div>
+          <h3>Maze Solving Robot</h3>
+          <p>Autonomous navigation robot using the flood-fill algorithm for real-time path optimization. Competed and won at the inter-college robotics competition.</p>
+          <div class="proj-tags">
+            <span>Arduino</span><span>C++</span><span>Flood-fill</span><span>Autonomous</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-domain"><i class="fa-solid fa-microchip"></i> Robotics</span>
+            <span class="proj-award"><i class="fa-solid fa-trophy"></i> Award Winner</span>
+          </div>
+        </div>
+
+        <div class="proj-card proj-featured" data-reveal>
+          <div class="proj-card-top">
+            <div class="proj-icon-wrap proj-icon-red"><i class="fa-solid fa-gamepad"></i></div>
+            <span class="status-badge status-done">Completed</span>
+          </div>
+          <div class="proj-spotlight">Featured</div>
+          <h3>2D Action Platformer</h3>
+          <p>Full-featured action platformer built in Unity with custom combat mechanics, enemy AI with state machines, and hand-crafted level design. Won prize at Enyugma '26.</p>
+          <div class="proj-tags">
+            <span>Unity</span><span>C#</span><span>Game Physics</span><span>AI State Machine</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-domain"><i class="fa-solid fa-gamepad"></i> Game Dev</span>
+            <span class="proj-award"><i class="fa-solid fa-trophy"></i> Enyugma '26 Winner</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-reveal>
+          <div class="proj-card-top">
+            <div class="proj-icon-wrap"><i class="fa-solid fa-spider"></i></div>
+            <span class="status-badge status-done">Completed</span>
+          </div>
+          <h3>Hexapod Robot</h3>
+          <p>Six-legged walking robot with coordinated gait patterns — tripod, wave, and ripple gaits — and real-time terrain-adaptive servo control logic.</p>
+          <div class="proj-tags">
+            <span>Arduino</span><span>Servo Control</span><span>Kinematics</span><span>C</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-domain"><i class="fa-solid fa-microchip"></i> Robotics</span>
+            <span class="proj-domain"><i class="fa-solid fa-leg"></i> Legged Locomotion</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-reveal>
+          <div class="proj-card-top">
+            <div class="proj-icon-wrap"><i class="fa-solid fa-face-smile-wink"></i></div>
+            <span class="status-badge status-wip">In Progress</span>
+          </div>
+          <h3>Emo Bot</h3>
+          <p>Personal social robot with servo-driven facial expressions and a software personality layer that detects and responds to human interaction cues in real time.</p>
+          <div class="proj-progress-mini">
+            <div class="mini-bar-row"><span>Hardware</span><span>70%</span></div>
+            <div class="mini-track"><div class="mini-fill" data-w="70"></div></div>
+            <div class="mini-bar-row"><span>Software</span><span>30%</span></div>
+            <div class="mini-track"><div class="mini-fill mini-fill-gray" data-w="30"></div></div>
+          </div>
+          <div class="proj-tags">
+            <span>Arduino</span><span>Embedded C</span><span>Servo Mechanics</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-domain"><i class="fa-solid fa-microchip"></i> Robotics</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ ACHIEVEMENTS TIMELINE ════ -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-head">
+        <span class="s-num">03</span>
+        <h2>Achievements <em>& Milestones</em></h2>
+        <div class="s-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"><i class="fa-solid fa-trophy"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2026</span>
+            <h3>Enyugma '26 — Game Dev Prize Winner</h3>
+            <p>Won at the national-level technical fest with a fully playable 2D Action Platformer built in Unity. Competed against teams from multiple institutions.</p>
+            <div class="tl-tags"><span>Game Development</span><span>Unity</span><span>C#</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"><i class="fa-solid fa-medal"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2025</span>
+            <h3>Maze Solving Robot — Award Winner</h3>
+            <p>Built an autonomous maze-solving robot using the flood-fill algorithm and won at the inter-college robotics event. First major hardware competition win.</p>
+            <div class="tl-tags"><span>Robotics</span><span>Arduino</span><span>Pathfinding</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"><i class="fa-solid fa-star"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2025</span>
+            <h3>CodeChef 2-Star — Max Rating 1445</h3>
+            <p>Reached 2-Star rating on CodeChef with a peak rating of 1445. Focus areas: data structures, dynamic programming, greedy algorithms, and graph theory.</p>
+            <div class="tl-tags"><span>C++</span><span>DSA</span><span>Competitive Programming</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2025</span>
+            <h3>Admitted to IIIT BH — Mechatronics Engineering</h3>
+            <p>Secured admission to the B.Tech Mechatronics Engineering & Automation program at IIIT BH. Completed Semester I with SGPA 8.13.</p>
+            <div class="tl-tags"><span>IIIT BH</span><span>MEA</span><span>SGPA 8.13</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"><i class="fa-solid fa-book"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2024</span>
+            <h3>Class XII — 92% in PCM</h3>
+            <p>Completed Senior Secondary education with 92% in Physics, Chemistry, and Mathematics. Foundation for engineering entrance examinations.</p>
+            <div class="tl-tags"><span>PCM</span><span>Senior Secondary</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ SKILLS ════ -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-head">
+        <span class="s-num">04</span>
+        <h2>Skills <em>& Tools</em></h2>
+        <div class="s-line"></div>
+      </div>
+
+      <div class="skills-block" data-reveal>
+        <h3 class="skills-group">Primary Engineering Skills</h3>
+        <div class="skills-tags">
+          <span class="tag tag-primary"><i class="fa-solid fa-c"></i> C / C++</span>
+          <span class="tag tag-primary"><i class="fa-solid fa-robot"></i> Robotics Hardware</span>
+          <span class="tag tag-primary"><i class="fa-solid fa-cube"></i> SolidWorks</span>
+          <span class="tag tag-primary"><i class="fa-brands fa-unity"></i> Unity Engine</span>
+          <span class="tag tag-primary"><i class="fa-solid fa-microchip"></i> Embedded Systems</span>
+          <span class="tag tag-primary"><i class="fa-solid fa-diagram-project"></i> DSA & Algorithms</span>
+          <span class="tag tag-primary"><i class="fa-solid fa-gears"></i> Arduino / MCU</span>
+          <span class="tag tag-primary"><i class="fa-solid fa-code"></i> C# Scripting</span>
+        </div>
+      </div>
+
+      <div class="skills-block" data-reveal>
+        <h3 class="skills-group">Tools & Secondary Skills</h3>
+        <div class="skills-tags">
+          <span class="tag tag-secondary"><i class="fa-brands fa-html5"></i> HTML</span>
+          <span class="tag tag-secondary"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+          <span class="tag tag-secondary"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="tag tag-secondary"><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span class="tag tag-secondary"><i class="fa-brands fa-github"></i> GitHub</span>
+          <span class="tag tag-secondary"><i class="fa-brands fa-linux"></i> Linux CLI</span>
+          <span class="tag tag-secondary"><i class="fa-solid fa-terminal"></i> Bash</span>
+          <span class="tag tag-secondary"><i class="fa-solid fa-print"></i> 3D Printing</span>
+        </div>
+      </div>
+
+      <div class="cp-panel" data-reveal>
+        <div class="cp-stat-box">
+          <span class="cp-big">1445</span>
+          <span>Max Rating</span>
+          <div class="cp-stars-row">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <span class="cp-platform">CodeChef · 2-Star</span>
+        </div>
+        <div class="cp-bars-col">
+          <div class="cp-row">
+            <div class="cp-row-label"><span>Data Structures</span><span>Advanced</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+          </div>
+          <div class="cp-row">
+            <div class="cp-row-label"><span>Dynamic Programming</span><span>Intermediate</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="65"></div></div>
+          </div>
+          <div class="cp-row">
+            <div class="cp-row-label"><span>Greedy Algorithms</span><span>Proficient</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="75"></div></div>
+          </div>
+          <div class="cp-row">
+            <div class="cp-row-label"><span>Graph Theory</span><span>Intermediate</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="60"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ LAB ════ -->
+  <section class="section" id="lab">
+    <div class="container">
+      <div class="section-head">
+        <span class="s-num">05</span>
+        <h2>In The <em>Lab</em></h2>
+        <div class="s-line"></div>
+      </div>
+      <p class="section-intro">What I'm currently building and planning to build next.</p>
+      <div class="lab-grid">
+        <div class="lab-item" data-reveal>
+          <div class="lab-header">
+            <div class="lab-icon-box"><i class="fa-solid fa-face-smile-wink"></i></div>
+            <div>
+              <h3>Emo Bot — Personal Social Robot</h3>
+              <span class="lab-status lab-active"><span class="pulse-dot"></span> Currently Building</span>
+            </div>
+          </div>
+          <p>An emotionally expressive personal robot with servo-driven facial mechanics and a software personality layer. Designed to recognize and respond to human interaction through expressive physical feedback.</p>
+          <div class="lab-bars">
+            <div class="lab-bar-row">
+              <span><i class="fa-solid fa-screwdriver-wrench"></i> Hardware</span><span>70%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-w="70"></div></div>
+            <div class="lab-bar-row" style="margin-top:0.9rem">
+              <span><i class="fa-solid fa-code"></i> Software</span><span>30%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill bar-dim" data-w="30"></div></div>
+          </div>
+          <div class="lab-tech-row">
+            <span>Arduino</span><span>Servo Mechanics</span><span>Embedded C</span><span>I2C Sensors</span>
+          </div>
+        </div>
+
+        <div class="lab-item" data-reveal>
+          <div class="lab-header">
+            <div class="lab-icon-box lab-icon-dim"><i class="fa-solid fa-brain"></i></div>
+            <div>
+              <h3>Machine Learning Roadmap</h3>
+              <span class="lab-status lab-planned"><i class="fa-solid fa-clock"></i> Starting 2nd Year</span>
+            </div>
+          </div>
+          <p>A structured deep-dive into machine learning fundamentals — from linear models through neural networks — with a focus on robotics perception and game AI applications.</p>
+          <div class="ml-steps">
+            <div class="ml-step done"><i class="fa-solid fa-check-circle"></i> Linear Algebra & Calculus refresh</div>
+            <div class="ml-step done"><i class="fa-solid fa-check-circle"></i> Python & NumPy fundamentals</div>
+            <div class="ml-step active"><i class="fa-solid fa-circle-arrow-right"></i> Supervised learning algorithms</div>
+            <div class="ml-step"><i class="fa-regular fa-circle"></i> Neural networks & deep learning</div>
+            <div class="ml-step"><i class="fa-regular fa-circle"></i> Robotics perception (Computer Vision)</div>
+          </div>
+          <div class="lab-tech-row">
+            <span>Python</span><span>NumPy</span><span>Scikit-learn</span><span>TensorFlow</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CONTACT ════ -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="s-num">06</span>
+        <h2>Get In <em>Touch</em></h2>
+        <div class="s-line"></div>
+      </div>
+      <div class="contact-wrap" data-reveal>
+        <div class="contact-left">
+          <h3>Let's Build Something Together</h3>
+          <p>Open to collaborations, internships, hackathons, and conversations around robotics, game development, or competitive programming. If you have an interesting problem — I'm interested.</p>
+          <div class="contact-detail">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>IIIT BH, India</span>
+          </div>
+          <div class="contact-detail">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>B.Tech MEA · First Year (2025–2029)</span>
+          </div>
+        </div>
+        <div class="contact-right">
+          <a href="https://github.com/" target="_blank" class="social-card">
+            <div class="social-icon-box"><i class="fa-brands fa-github"></i></div>
+            <div class="social-info">
+              <strong>GitHub</strong>
+              <span>Code, projects & repos</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" class="social-card">
+            <div class="social-icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="social-info">
+              <strong>LinkedIn</strong>
+              <span>Professional profile</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+          <a href="mailto:mohit@example.com" class="social-card">
+            <div class="social-icon-box"><i class="fa-solid fa-envelope"></i></div>
+            <div class="social-info">
+              <strong>Email</strong>
+              <span>mohit@example.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+          <a href="https://www.codechef.com/" target="_blank" class="social-card">
+            <div class="social-icon-box"><i class="fa-solid fa-code"></i></div>
+            <div class="social-info">
+              <strong>CodeChef</strong>
+              <span>Competitive programming · 2★</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ MACBOOK DOCK ════ -->
+  <div class="dock-wrap" id="dock">
+    <div class="dock-inner">
+
+      <div class="dock-item" data-tooltip="Home">
+        <a href="#home" class="dock-btn">
+          <i class="fa-solid fa-house"></i>
+        </a>
+      </div>
+
+      <div class="dock-item" data-tooltip="About Me">
+        <a href="#about" class="dock-btn">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </div>
+
+      <div class="dock-item" data-tooltip="Proof of Work">
+        <a href="#projects" class="dock-btn">
+          <i class="fa-solid fa-folder-open"></i>
+        </a>
+      </div>
+
+      <div class="dock-item" data-tooltip="Achievements">
+        <a href="#achievements" class="dock-btn">
+          <i class="fa-solid fa-trophy"></i>
+        </a>
+      </div>
+
+      <div class="dock-item" data-tooltip="Skills">
+        <a href="#skills" class="dock-btn">
+          <i class="fa-solid fa-gears"></i>
+        </a>
+      </div>
+
+      <div class="dock-item" data-tooltip="The Lab">
+        <a href="#lab" class="dock-btn">
+          <i class="fa-solid fa-flask-vial"></i>
+        </a>
+      </div>
+
+      <div class="dock-sep"></div>
+
+      <div class="dock-item" data-tooltip="GitHub">
+        <a href="https://github.com/" target="_blank" class="dock-btn">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <div class="dock-item" data-tooltip="LinkedIn">
+        <a href="https://linkedin.com/" target="_blank" class="dock-btn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <div class="dock-sep"></div>
+
+      <div class="dock-item" data-tooltip="Command Palette">
+        <button class="dock-btn dock-cmd-btn" id="dockCmdBtn">
+          <i class="fa-solid fa-terminal"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ════ COMMAND PALETTE ════ -->
+  <div class="cmd-overlay" id="cmdOverlay" role="dialog" aria-modal="true" aria-label="Command Palette">
+    <div class="cmd-palette" id="cmdPalette">
+      <div class="cmd-header">
+        <div class="cmd-search-wrap">
+          <i class="fa-solid fa-magnifying-glass cmd-search-icon"></i>
+          <input
+            type="text"
+            class="cmd-input"
+            id="cmdInput"
+            placeholder="Type a command or search…"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <span class="cmd-esc-hint">ESC</span>
+        </div>
+      </div>
+      <div class="cmd-body" id="cmdBody">
+
+        <div class="cmd-group">
+          <span class="cmd-group-label">Navigation</span>
+          <button class="cmd-item" data-action="home">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon"><i class="fa-solid fa-house"></i></span>
+              <span class="cmd-item-label">Go to Home</span>
+            </div>
+            <kbd>Ctrl H</kbd>
+          </button>
+          <button class="cmd-item" data-action="projects">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon"><i class="fa-solid fa-folder-open"></i></span>
+              <span class="cmd-item-label">View Projects</span>
+            </div>
+            <kbd>Ctrl P</kbd>
+          </button>
+          <button class="cmd-item" data-action="about">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="cmd-item-label">About Me</span>
+            </div>
+            <kbd></kbd>
+          </button>
+          <button class="cmd-item" data-action="achievements">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon"><i class="fa-solid fa-trophy"></i></span>
+              <span class="cmd-item-label">Achievements Timeline</span>
+            </div>
+            <kbd></kbd>
+          </button>
+          <button class="cmd-item" data-action="contact">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span class="cmd-item-label">Contact Me</span>
+            </div>
+            <kbd></kbd>
+          </button>
+        </div>
+
+        <div class="cmd-group">
+          <span class="cmd-group-label">Actions</span>
+          <button class="cmd-item" data-action="theme">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon" id="themeIcon"><i class="fa-solid fa-moon"></i></span>
+              <span class="cmd-item-label" id="themeLabel">Toggle Light Mode</span>
+            </div>
+            <kbd>Ctrl D</kbd>
+          </button>
+          <button class="cmd-item" data-action="resume">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+              <span class="cmd-item-label">Download Resume</span>
+            </div>
+            <kbd>Ctrl R</kbd>
+          </button>
+        </div>
+
+        <div class="cmd-group">
+          <span class="cmd-group-label">Social Links</span>
+          <button class="cmd-item" data-action="github">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon"><i class="fa-brands fa-github"></i></span>
+              <span class="cmd-item-label">GitHub Profile</span>
+            </div>
+            <span class="cmd-ext-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </button>
+          <button class="cmd-item" data-action="linkedin">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <span class="cmd-item-label">LinkedIn Profile</span>
+            </div>
+            <span class="cmd-ext-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </button>
+          <button class="cmd-item" data-action="codechef">
+            <div class="cmd-item-left">
+              <span class="cmd-item-icon"><i class="fa-solid fa-code"></i></span>
+              <span class="cmd-item-label">CodeChef — 2★ · 1445</span>
+            </div>
+            <span class="cmd-ext-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </button>
+        </div>
+
+      </div>
+      <div class="cmd-footer">
+        <span><kbd>↑</kbd><kbd>↓</kbd> Navigate</span>
+        <span><kbd>↵</kbd> Select</span>
+        <span><kbd>Esc</kbd> Dismiss</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════ FLOATING CMD TRIGGER ════ -->
+  <button class="cmd-fab" id="cmdFab" aria-label="Open Command Palette">
+    <i class="fa-solid fa-terminal"></i>
+    <span class="cmd-fab-hint">⌘K</span>
+  </button>
+
+  <!-- ════ FOOTER ════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        M<span class="logo-dot">.</span>
+        <span>Mohit · IIIT BH</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Timeline</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:mohit@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.codechef.com/" target="_blank" aria-label="CodeChef"><i class="fa-solid fa-code"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Mohit. Designed & built from scratch. Mechatronics Engineering & Automation, IIIT BH.</span>
+    </div>
+  </footer>
+
+  <script>
+    /* ════════════════════════════════════════
+       NAVBAR
+    ════════════════════════════════════════ */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('navMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMenu.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-menu a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+      });
+    });
+
+    /* ════════════════════════════════════════
+       TYPEWRITER
+    ════════════════════════════════════════ */
+    const phrases = ['Mechatronics Engineer', 'Game Developer', 'Robot Enthusiast', 'Problem Solver'];
+    let pi = 0, ci = 0, deleting = false;
+    const tw = document.getElementById('typewriter');
+    function type() {
+      const phrase = phrases[pi];
+      if (!deleting) {
+        tw.textContent = phrase.slice(0, ++ci);
+        if (ci === phrase.length) { deleting = true; setTimeout(type, 1800); return; }
+      } else {
+        tw.textContent = phrase.slice(0, --ci);
+        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+      }
+      setTimeout(type, deleting ? 55 : 90);
+    }
+    type();
+
+    /* ════════════════════════════════════════
+       SCROLL REVEAL
+    ════════════════════════════════════════ */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('[data-reveal]').forEach((el, i) => {
+      el.style.setProperty('--delay', `${(i % 4) * 0.1}s`);
+      revealObserver.observe(el);
+    });
+
+    /* ════════════════════════════════════════
+       BARS
+    ════════════════════════════════════════ */
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.bar-fill, .mini-fill').forEach(b => { b.style.width = b.getAttribute('data-w') + '%'; });
+          barObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.cp-bars-col, .lab-bars, .proj-progress-mini').forEach(el => barObserver.observe(el));
+
+    /* ════════════════════════════════════════
+       ACTIVE NAV
+    ════════════════════════════════════════ */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav-menu a:not(.nav-hire)');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
+      navLinks.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+      });
+    });
+
+    /* ════════════════════════════════════════
+       MACBOOK DOCK — MAGNIFICATION
+    ════════════════════════════════════════ */
+    const dockItems = document.querySelectorAll('.dock-item');
+
+    // Returns scale based on distance from hovered item
+    function getScale(distance) {
+      if (distance === 0) return 1.75;
+      if (distance === 1) return 1.35;
+      if (distance === 2) return 1.12;
+      return 1;
+    }
+
+    dockItems.forEach((item, idx) => {
+      item.addEventListener('mouseenter', () => {
+        dockItems.forEach((other, otherIdx) => {
+          if (other.classList.contains('dock-sep')) return;
+          const dist = Math.abs(idx - otherIdx);
+          const scale = getScale(dist);
+          const btn = other.querySelector('.dock-btn');
+          if (btn) {
+            btn.style.transform = `scale(${scale}) translateY(${dist === 0 ? -10 : dist === 1 ? -5 : 0}px)`;
+          }
+          // Push tooltip up proportionally
+          const tooltip = other.getAttribute('data-tooltip');
+          if (tooltip) {
+            other.style.setProperty('--tooltip-offset', `${dist === 0 ? -52 : -42}px`);
+          }
+        });
+      });
+    });
+
+    document.getElementById('dock').addEventListener('mouseleave', () => {
+      dockItems.forEach(item => {
+        const btn = item.querySelector('.dock-btn');
+        if (btn) btn.style.transform = 'scale(1) translateY(0)';
+      });
+    });
+
+    /* ════════════════════════════════════════
+       COMMAND PALETTE
+    ════════════════════════════════════════ */
+    const cmdOverlay = document.getElementById('cmdOverlay');
+    const cmdInput   = document.getElementById('cmdInput');
+    const cmdBody    = document.getElementById('cmdBody');
+    let cmdOpen      = false;
+    let activeIdx    = -1;
+    let isDark       = true;
+
+    function openCmd() {
+      cmdOverlay.classList.add('visible');
+      cmdOpen = true;
+      activeIdx = -1;
+      setTimeout(() => { cmdInput.focus(); cmdInput.value = ''; filterItems(''); }, 50);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCmd() {
+      cmdOverlay.classList.remove('visible');
+      cmdOpen = false;
+      document.body.style.overflow = '';
+    }
+
+    function toggleCmd() { cmdOpen ? closeCmd() : openCmd(); }
+
+    // Triggers
+    document.getElementById('cmdFab').addEventListener('click', toggleCmd);
+    document.getElementById('dockCmdBtn').addEventListener('click', toggleCmd);
+    cmdOverlay.addEventListener('click', (e) => { if (e.target === cmdOverlay) closeCmd(); });
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      const ctrl = e.ctrlKey || e.metaKey;
+
+      if (ctrl && e.key === 'k') { e.preventDefault(); toggleCmd(); return; }
+      if (e.key === 'Escape' && cmdOpen) { closeCmd(); return; }
+
+      // Global shortcuts (work even when palette is closed)
+      if (ctrl && e.key === 'd') { e.preventDefault(); executeAction('theme'); return; }
+      if (ctrl && e.key === 'h') { e.preventDefault(); executeAction('home'); return; }
+      if (ctrl && e.key === 'p' && !cmdOpen) { e.preventDefault(); executeAction('projects'); return; }
+      if (ctrl && e.key === 'r' && !cmdOpen) { e.preventDefault(); executeAction('resume'); return; }
+
+      if (!cmdOpen) return;
+
+      const items = [...cmdBody.querySelectorAll('.cmd-item:not(.cmd-hidden)')];
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        activeIdx = (activeIdx + 1) % items.length;
+        updateActive(items);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        activeIdx = (activeIdx - 1 + items.length) % items.length;
+        updateActive(items);
+      } else if (e.key === 'Enter' && activeIdx >= 0) {
+        e.preventDefault();
+        items[activeIdx].click();
+      }
+    });
+
+    function updateActive(items) {
+      items.forEach((it, i) => it.classList.toggle('cmd-active', i === activeIdx));
+      if (activeIdx >= 0) items[activeIdx].scrollIntoView({ block: 'nearest' });
+    }
+
+    // Search / filter
+    cmdInput.addEventListener('input', () => filterItems(cmdInput.value.toLowerCase().trim()));
+
+    function filterItems(query) {
+      activeIdx = -1;
+      const groups = cmdBody.querySelectorAll('.cmd-group');
+      groups.forEach(group => {
+        let visCount = 0;
+        group.querySelectorAll('.cmd-item').forEach(item => {
+          const label = item.querySelector('.cmd-item-label').textContent.toLowerCase();
+          const hide  = query && !label.includes(query);
+          item.classList.toggle('cmd-hidden', hide);
+          if (!hide) visCount++;
+        });
+        group.style.display = visCount === 0 ? 'none' : '';
+      });
+      // Auto-select first visible
+      const first = cmdBody.querySelector('.cmd-item:not(.cmd-hidden)');
+      if (first && query) {
+        const allVisible = [...cmdBody.querySelectorAll('.cmd-item:not(.cmd-hidden)')];
+        activeIdx = 0;
+        updateActive(allVisible);
+      }
+    }
+
+    // Actions
+    document.querySelectorAll('.cmd-item').forEach(item => {
+      item.addEventListener('click', () => {
+        executeAction(item.getAttribute('data-action'));
+      });
+    });
+
+    function executeAction(action) {
+      const targets = { home: '#home', about: '#about', projects: '#projects', achievements: '#achievements', skills: '#skills', lab: '#lab', contact: '#contact' };
+      if (targets[action]) {
+        closeCmd();
+        const el = document.querySelector(targets[action]);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      } else if (action === 'theme') {
+        isDark = !isDark;
+        document.documentElement.classList.toggle('light-mode', !isDark);
+        const icon  = document.getElementById('themeIcon');
+        const label = document.getElementById('themeLabel');
+        if (isDark) {
+          icon.innerHTML  = '<i class="fa-solid fa-moon"></i>';
+          label.textContent = 'Toggle Light Mode';
+        } else {
+          icon.innerHTML  = '<i class="fa-solid fa-sun"></i>';
+          label.textContent = 'Toggle Dark Mode';
+        }
+      } else if (action === 'resume') {
+        closeCmd();
+        // Replace with actual resume URL
+        alert('Resume download coming soon! Add your resume URL here.');
+      } else if (action === 'github') {
+        closeCmd(); window.open('https://github.com/', '_blank');
+      } else if (action === 'linkedin') {
+        closeCmd(); window.open('https://linkedin.com/', '_blank');
+      } else if (action === 'codechef') {
+        closeCmd(); window.open('https://www.codechef.com/', '_blank');
+      }
+    }
+  </script>
+</body>
+</html>
