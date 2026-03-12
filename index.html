@@ -12,22 +12,6 @@
 </head>
 <body>
 
-  <!-- ════ NAVBAR ════ -->
-  <header class="navbar" id="navbar">
-    <a href="#home" class="nav-logo">M<span class="logo-dot">.</span></a>
-    <nav class="nav-menu" id="navMenu">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#skills">Skills</a>
-      <a href="#lab">Lab</a>
-      <a href="#contact" class="nav-hire">Hire Me</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
-
   <!-- ════ HERO ════ -->
   <section class="hero" id="home">
     <div class="hero-bg-text" aria-hidden="true">MOHIT</div>
@@ -35,7 +19,6 @@
       <p class="hero-greeting"><span class="greeting-line"></span> Hello, I'm</p>
       <h1 class="hero-name">Mohit</h1>
       <div class="typewriter-wrap">
-        <span class="typewriter-prefix">I build </span>
         <span class="typewriter-text" id="typewriter"></span>
         <span class="typewriter-cursor">|</span>
       </div>
@@ -51,7 +34,7 @@
         <span><i class="fa-solid fa-trophy"></i> Award-Winning Robotics</span>
         <span><i class="fa-solid fa-gamepad"></i> Enyugma '26 Prize</span>
         <span><i class="fa-solid fa-star"></i> CodeChef 2★ · 1445</span>
-        <span><i class="fa-solid fa-graduation-cap"></i> SGPA 8.13</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> SGPA 8.26</span>
       </div>
     </div>
     <div class="hero-scroll">
@@ -74,7 +57,7 @@
           <p>I believe the best engineers think across domains. Competitive programming sharpens problem structure. Robotics teaches real-world constraints. Game development builds intuition for real-time systems and state management.</p>
           <div class="about-stats">
             <div class="stat">
-              <strong>8.13</strong>
+              <strong>8.26</strong>
               <span>SGPA · Sem 1</span>
             </div>
             <div class="stat">
@@ -98,7 +81,7 @@
             <div>
               <strong>B.Tech — Mechatronics Engg. & Automation</strong>
               <span>IIIT BH · 2025 – 2029</span>
-              <span class="edu-mark">SGPA 8.13 · Semester I</span>
+              <span class="edu-mark">SGPA 8.26 · Semester I</span>
             </div>
           </div>
           <div class="edu-card">
@@ -138,9 +121,9 @@
             <span class="status-badge status-done">Completed</span>
           </div>
           <h3>Maze Solving Robot</h3>
-          <p>Autonomous navigation robot using the flood-fill algorithm for real-time path optimization. Competed and won at the inter-college robotics competition.</p>
+          <p>Autonomous navigation robot using the PID , LSFR algorithms for real-time path optimization. Competed and won at the techno cultural fest of IIIT BH while competing with teams from different colleges.</p>
           <div class="proj-tags">
-            <span>Arduino</span><span>C++</span><span>Flood-fill</span><span>Autonomous</span>
+            <span>Arduino</span><span>Flood-fill</span><span>PID Controller</span><span>Autonomous</span>
           </div>
           <div class="proj-footer">
             <span class="proj-domain"><i class="fa-solid fa-microchip"></i> Robotics</span>
@@ -155,7 +138,7 @@
           </div>
           <div class="proj-spotlight">Featured</div>
           <h3>2D Action Platformer</h3>
-          <p>Full-featured action platformer built in Unity with custom combat mechanics, enemy AI with state machines, and hand-crafted level design. Won prize at Enyugma '26.</p>
+          <p>Full-featured action platformer with vibes of visual novel built in Unity with custom combat mechanics, enemy AI with state machines, and hand-crafted level design. Won in the GDAI assessment round of the Game Jam at the techno cultural fest of IIIT BH.</p>
           <div class="proj-tags">
             <span>Unity</span><span>C#</span><span>Game Physics</span><span>AI State Machine</span>
           </div>
@@ -168,10 +151,16 @@
         <div class="proj-card" data-reveal>
           <div class="proj-card-top">
             <div class="proj-icon-wrap"><i class="fa-solid fa-spider"></i></div>
-            <span class="status-badge status-done">Completed</span>
+            <span class="status-badge status-wip">In Progress</span>
           </div>
           <h3>Hexapod Robot</h3>
-          <p>Six-legged walking robot with coordinated gait patterns — tripod, wave, and ripple gaits — and real-time terrain-adaptive servo control logic.</p>
+          <p>Six-legged walking robot with coordinated gait patterns — tripod, wave, and ripple gaits — servo control logic.</p>
+          <div class="proj-progress-mini">
+            <div class="mini-bar-row"><span>Mechanical</span><span>0%</span></div>
+            <div class="mini-track"><div class="mini-fill" data-w="0"></div></div>
+            <div class="mini-bar-row"><span>Code</span><span>0%</span></div>
+            <div class="mini-track"><div class="mini-fill mini-fill-gray" data-w="0"></div></div>
+          </div>
           <div class="proj-tags">
             <span>Arduino</span><span>Servo Control</span><span>Kinematics</span><span>C</span>
           </div>
@@ -187,12 +176,12 @@
             <span class="status-badge status-wip">In Progress</span>
           </div>
           <h3>Emo Bot</h3>
-          <p>Personal social robot with servo-driven facial expressions and a software personality layer that detects and responds to human interaction cues in real time.</p>
+          <p>Personal social robot with a display for facial expressions and a software personality layer that detects and responds to human interaction in real time.</p>
           <div class="proj-progress-mini">
-            <div class="mini-bar-row"><span>Hardware</span><span>70%</span></div>
-            <div class="mini-track"><div class="mini-fill" data-w="70"></div></div>
-            <div class="mini-bar-row"><span>Software</span><span>30%</span></div>
-            <div class="mini-track"><div class="mini-fill mini-fill-gray" data-w="30"></div></div>
+            <div class="mini-bar-row"><span>Hardware</span><span>0%</span></div>
+            <div class="mini-track"><div class="mini-fill" data-w="0"></div></div>
+            <div class="mini-bar-row"><span>Software</span><span>0%</span></div>
+            <div class="mini-track"><div class="mini-fill mini-fill-gray" data-w="0"></div></div>
           </div>
           <div class="proj-tags">
             <span>Arduino</span><span>Embedded C</span><span>Servo Mechanics</span>
@@ -220,8 +209,8 @@
           <div class="tl-dot"><i class="fa-solid fa-trophy"></i></div>
           <div class="tl-card">
             <span class="tl-date">2026</span>
-            <h3>Enyugma '26 — Game Dev Prize Winner</h3>
-            <p>Won at the national-level technical fest with a fully playable 2D Action Platformer built in Unity. Competed against teams from multiple institutions.</p>
+            <h3>Enyugma '26 — Game Dev Prize Winner in GDAI Assessment Round</h3>
+            <p>Won at the technical fest with a fully playable 2D Action Platformer built in Unity.</p>
             <div class="tl-tags"><span>Game Development</span><span>Unity</span><span>C#</span></div>
           </div>
         </div>
@@ -231,7 +220,7 @@
           <div class="tl-card">
             <span class="tl-date">2025</span>
             <h3>Maze Solving Robot — Award Winner</h3>
-            <p>Built an autonomous maze-solving robot using the flood-fill algorithm and won at the inter-college robotics event. First major hardware competition win.</p>
+            <p>Built an autonomous maze-solving robot using the flood-fill algorithm and won third prize. First major hardware competition win.</p>
             <div class="tl-tags"><span>Robotics</span><span>Arduino</span><span>Pathfinding</span></div>
           </div>
         </div>
@@ -241,7 +230,7 @@
           <div class="tl-card">
             <span class="tl-date">2025</span>
             <h3>CodeChef 2-Star — Max Rating 1445</h3>
-            <p>Reached 2-Star rating on CodeChef with a peak rating of 1445. Focus areas: data structures, dynamic programming, greedy algorithms, and graph theory.</p>
+            <p>Reached 2-Star rating on CodeChef with a peak rating of 1445. Focus areas: arrays, strings, recursion, and linked list problems.</p>
             <div class="tl-tags"><span>C++</span><span>DSA</span><span>Competitive Programming</span></div>
           </div>
         </div>
@@ -251,8 +240,8 @@
           <div class="tl-card">
             <span class="tl-date">2025</span>
             <h3>Admitted to IIIT BH — Mechatronics Engineering</h3>
-            <p>Secured admission to the B.Tech Mechatronics Engineering & Automation program at IIIT BH. Completed Semester I with SGPA 8.13.</p>
-            <div class="tl-tags"><span>IIIT BH</span><span>MEA</span><span>SGPA 8.13</span></div>
+            <p>Secured admission to the B.Tech Mechatronics Engineering & Automation program at IIIT BH. Completed Semester I with SGPA 8.26.</p>
+            <div class="tl-tags"><span>IIIT BH</span><span>MEA</span><span>SGPA 8.26</span></div>
           </div>
         </div>
 
@@ -301,9 +290,6 @@
           <span class="tag tag-secondary"><i class="fa-brands fa-js"></i> JavaScript</span>
           <span class="tag tag-secondary"><i class="fa-brands fa-git-alt"></i> Git</span>
           <span class="tag tag-secondary"><i class="fa-brands fa-github"></i> GitHub</span>
-          <span class="tag tag-secondary"><i class="fa-brands fa-linux"></i> Linux CLI</span>
-          <span class="tag tag-secondary"><i class="fa-solid fa-terminal"></i> Bash</span>
-          <span class="tag tag-secondary"><i class="fa-solid fa-print"></i> 3D Printing</span>
         </div>
       </div>
 
@@ -322,19 +308,19 @@
         </div>
         <div class="cp-bars-col">
           <div class="cp-row">
-            <div class="cp-row-label"><span>Data Structures</span><span>Advanced</span></div>
+            <div class="cp-row-label"><span>Arrays</span><span>Advanced</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="85"></div></div>
+          </div>
+          <div class="cp-row">
+            <div class="cp-row-label"><span>Strings</span><span>Advanced</span></div>
             <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
           </div>
           <div class="cp-row">
-            <div class="cp-row-label"><span>Dynamic Programming</span><span>Intermediate</span></div>
-            <div class="bar-track"><div class="bar-fill" data-w="65"></div></div>
+            <div class="cp-row-label"><span>Recursion</span><span>Proficient</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="70"></div></div>
           </div>
           <div class="cp-row">
-            <div class="cp-row-label"><span>Greedy Algorithms</span><span>Proficient</span></div>
-            <div class="bar-track"><div class="bar-fill" data-w="75"></div></div>
-          </div>
-          <div class="cp-row">
-            <div class="cp-row-label"><span>Graph Theory</span><span>Intermediate</span></div>
+            <div class="cp-row-label"><span>Linked List</span><span>Intermediate</span></div>
             <div class="bar-track"><div class="bar-fill" data-w="60"></div></div>
           </div>
         </div>
@@ -352,24 +338,25 @@
       </div>
       <p class="section-intro">What I'm currently building and planning to build next.</p>
       <div class="lab-grid">
+
         <div class="lab-item" data-reveal>
           <div class="lab-header">
             <div class="lab-icon-box"><i class="fa-solid fa-face-smile-wink"></i></div>
             <div>
-              <h3>Emo Bot — Personal Social Robot</h3>
+              <h3>Basic Emo Bot</h3>
               <span class="lab-status lab-active"><span class="pulse-dot"></span> Currently Building</span>
             </div>
           </div>
-          <p>An emotionally expressive personal robot with servo-driven facial mechanics and a software personality layer. Designed to recognize and respond to human interaction through expressive physical feedback.</p>
+          <p>A DIY desktop companion robot designed to explore social robotics. Features a basic interaction logic using an OLED display for facial expressions</p>
           <div class="lab-bars">
             <div class="lab-bar-row">
-              <span><i class="fa-solid fa-screwdriver-wrench"></i> Hardware</span><span>70%</span>
+              <span><i class="fa-solid fa-screwdriver-wrench"></i> Hardware</span><span>0%</span>
             </div>
-            <div class="bar-track"><div class="bar-fill" data-w="70"></div></div>
+            <div class="bar-track"><div class="bar-fill" data-w="0"></div></div>
             <div class="lab-bar-row" style="margin-top:0.9rem">
-              <span><i class="fa-solid fa-code"></i> Software</span><span>30%</span>
+              <span><i class="fa-solid fa-code"></i> Software</span><span>0%</span>
             </div>
-            <div class="bar-track"><div class="bar-fill bar-dim" data-w="30"></div></div>
+            <div class="bar-track"><div class="bar-fill bar-dim" data-w="0"></div></div>
           </div>
           <div class="lab-tech-row">
             <span>Arduino</span><span>Servo Mechanics</span><span>Embedded C</span><span>I2C Sensors</span>
@@ -378,24 +365,52 @@
 
         <div class="lab-item" data-reveal>
           <div class="lab-header">
-            <div class="lab-icon-box lab-icon-dim"><i class="fa-solid fa-brain"></i></div>
+            <div class="lab-icon-box"><i class="fa-solid fa-spider"></i></div>
             <div>
-              <h3>Machine Learning Roadmap</h3>
-              <span class="lab-status lab-planned"><i class="fa-solid fa-clock"></i> Starting 2nd Year</span>
+              <h3>Hexapod Robot</h3>
+              <span class="lab-status lab-active"><span class="pulse-dot"></span> Currently Building</span>
             </div>
           </div>
-          <p>A structured deep-dive into machine learning fundamentals — from linear models through neural networks — with a focus on robotics perception and game AI applications.</p>
-          <div class="ml-steps">
-            <div class="ml-step done"><i class="fa-solid fa-check-circle"></i> Linear Algebra & Calculus refresh</div>
-            <div class="ml-step done"><i class="fa-solid fa-check-circle"></i> Python & NumPy fundamentals</div>
-            <div class="ml-step active"><i class="fa-solid fa-circle-arrow-right"></i> Supervised learning algorithms</div>
-            <div class="ml-step"><i class="fa-regular fa-circle"></i> Neural networks & deep learning</div>
-            <div class="ml-step"><i class="fa-regular fa-circle"></i> Robotics perception (Computer Vision)</div>
+          <p>A six-legged walking robot project focused on mastering inverse kinematics and gait planning. Currently in the structural design phase, aiming to implement stable tripod and wave gaits using coordinated servo control on an Arduino-based system.</p>
+          <div class="lab-bars">
+            <div class="lab-bar-row">
+              <span><i class="fa-solid fa-screwdriver-wrench"></i> Mechanical</span><span>0%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-w="0"></div></div>
+            <div class="lab-bar-row" style="margin-top:0.9rem">
+              <span><i class="fa-solid fa-code"></i> Code</span><span>0%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill bar-dim" data-w="0"></div></div>
           </div>
           <div class="lab-tech-row">
-            <span>Python</span><span>NumPy</span><span>Scikit-learn</span><span>TensorFlow</span>
+            <span>Arduino</span><span>Servo Control</span><span>Kinematics</span><span>C</span>
           </div>
         </div>
+
+        <div class="lab-item" data-reveal>
+          <div class="lab-header">
+            <div class="lab-icon-box lab-icon-game"><i class="fa-solid fa-dungeon"></i></div>
+            <div>
+              <h3>3D RPG Game</h3>
+              <span class="lab-status lab-active"><span class="pulse-dot"></span> Currently Building</span>
+            </div>
+          </div>
+          <p>An immersive third-person RPG exploring advanced character mechanics and world-building. Diving deep into 3D game systems, complex AI, and rich environment design.</p>
+          <div class="lab-bars">
+            <div class="lab-bar-row">
+              <span><i class="fa-solid fa-screwdriver-wrench"></i> Design</span><span>0%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-w="0"></div></div>
+            <div class="lab-bar-row" style="margin-top:0.9rem">
+              <span><i class="fa-solid fa-code"></i> Code</span><span>0%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill bar-dim" data-w="0"></div></div>
+          </div>
+          <div class="lab-tech-row">
+            <span>Unity</span><span>C#</span><span>3D Modeling</span><span>Game AI</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -422,7 +437,7 @@
           </div>
         </div>
         <div class="contact-right">
-          <a href="https://github.com/" target="_blank" class="social-card">
+          <a href="https://github.com/gthub-mohit" target="_blank" class="social-card">
             <div class="social-icon-box"><i class="fa-brands fa-github"></i></div>
             <div class="social-info">
               <strong>GitHub</strong>
@@ -438,7 +453,7 @@
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
           </a>
-          <a href="mailto:mohit@example.com" class="social-card">
+          <a href="mailto:mohitk24407@gmail.com" class="social-card">
             <div class="social-icon-box"><i class="fa-solid fa-envelope"></i></div>
             <div class="social-info">
               <strong>Email</strong>
@@ -475,7 +490,7 @@
         </a>
       </div>
 
-      <div class="dock-item" data-tooltip="Proof of Work">
+      <div class="dock-item" data-tooltip="Projects">
         <a href="#projects" class="dock-btn">
           <i class="fa-solid fa-folder-open"></i>
         </a>
@@ -648,16 +663,13 @@
         <span>Mohit · IIIT BH</span>
       </div>
       <nav class="footer-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#achievements">Timeline</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="footer-socials">
         <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:mohit@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:mohitk24407@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://www.codechef.com/" target="_blank" aria-label="CodeChef"><i class="fa-solid fa-code"></i></a>
       </div>
     </div>
@@ -667,27 +679,6 @@
   </footer>
 
   <script>
-    /* ════════════════════════════════════════
-       NAVBAR
-    ════════════════════════════════════════ */
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    const hamburger = document.getElementById('hamburger');
-    const navMenu   = document.getElementById('navMenu');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      navMenu.classList.toggle('open');
-    });
-    document.querySelectorAll('.nav-menu a').forEach(a => {
-      a.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navMenu.classList.remove('open');
-      });
-    });
-
     /* ════════════════════════════════════════
        TYPEWRITER
     ════════════════════════════════════════ */
@@ -734,30 +725,21 @@
     document.querySelectorAll('.cp-bars-col, .lab-bars, .proj-progress-mini').forEach(el => barObserver.observe(el));
 
     /* ════════════════════════════════════════
-       ACTIVE NAV
-    ════════════════════════════════════════ */
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks  = document.querySelectorAll('.nav-menu a:not(.nav-hire)');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
-      navLinks.forEach(a => {
-        a.classList.remove('active');
-        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
-      });
-    });
-
-    /* ════════════════════════════════════════
        MACBOOK DOCK — MAGNIFICATION
     ════════════════════════════════════════ */
     const dockItems = document.querySelectorAll('.dock-item');
 
-    // Returns scale based on distance from hovered item
     function getScale(distance) {
-      if (distance === 0) return 1.75;
-      if (distance === 1) return 1.35;
-      if (distance === 2) return 1.12;
+      if (distance === 0) return 1.55;
+      if (distance === 1) return 1.25;
+      if (distance === 2) return 1.08;
       return 1;
+    }
+
+    function getTranslateY(distance) {
+      if (distance === 0) return -8;
+      if (distance === 1) return -4;
+      return 0;
     }
 
     dockItems.forEach((item, idx) => {
@@ -766,14 +748,10 @@
           if (other.classList.contains('dock-sep')) return;
           const dist = Math.abs(idx - otherIdx);
           const scale = getScale(dist);
+          const ty = getTranslateY(dist);
           const btn = other.querySelector('.dock-btn');
           if (btn) {
-            btn.style.transform = `scale(${scale}) translateY(${dist === 0 ? -10 : dist === 1 ? -5 : 0}px)`;
-          }
-          // Push tooltip up proportionally
-          const tooltip = other.getAttribute('data-tooltip');
-          if (tooltip) {
-            other.style.setProperty('--tooltip-offset', `${dist === 0 ? -52 : -42}px`);
+            btn.style.transform = `scale(${scale}) translateY(${ty}px)`;
           }
         });
       });
@@ -812,19 +790,16 @@
 
     function toggleCmd() { cmdOpen ? closeCmd() : openCmd(); }
 
-    // Triggers
     document.getElementById('cmdFab').addEventListener('click', toggleCmd);
     document.getElementById('dockCmdBtn').addEventListener('click', toggleCmd);
     cmdOverlay.addEventListener('click', (e) => { if (e.target === cmdOverlay) closeCmd(); });
 
-    // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
       const ctrl = e.ctrlKey || e.metaKey;
 
       if (ctrl && e.key === 'k') { e.preventDefault(); toggleCmd(); return; }
       if (e.key === 'Escape' && cmdOpen) { closeCmd(); return; }
 
-      // Global shortcuts (work even when palette is closed)
       if (ctrl && e.key === 'd') { e.preventDefault(); executeAction('theme'); return; }
       if (ctrl && e.key === 'h') { e.preventDefault(); executeAction('home'); return; }
       if (ctrl && e.key === 'p' && !cmdOpen) { e.preventDefault(); executeAction('projects'); return; }
@@ -852,7 +827,6 @@
       if (activeIdx >= 0) items[activeIdx].scrollIntoView({ block: 'nearest' });
     }
 
-    // Search / filter
     cmdInput.addEventListener('input', () => filterItems(cmdInput.value.toLowerCase().trim()));
 
     function filterItems(query) {
@@ -868,7 +842,6 @@
         });
         group.style.display = visCount === 0 ? 'none' : '';
       });
-      // Auto-select first visible
       const first = cmdBody.querySelector('.cmd-item:not(.cmd-hidden)');
       if (first && query) {
         const allVisible = [...cmdBody.querySelectorAll('.cmd-item:not(.cmd-hidden)')];
@@ -877,7 +850,6 @@
       }
     }
 
-    // Actions
     document.querySelectorAll('.cmd-item').forEach(item => {
       item.addEventListener('click', () => {
         executeAction(item.getAttribute('data-action'));
@@ -904,7 +876,6 @@
         }
       } else if (action === 'resume') {
         closeCmd();
-        // Replace with actual resume URL
         alert('Resume download coming soon! Add your resume URL here.');
       } else if (action === 'github') {
         closeCmd(); window.open('https://github.com/', '_blank');
