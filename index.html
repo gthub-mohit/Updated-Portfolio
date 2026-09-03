@@ -969,7 +969,8 @@
         label.textContent = isDark ? 'Toggle Light Mode' : 'Toggle Dark Mode';
       } else if (action === 'resume') {
         closeCmd();
-        alert('Resume download coming soon! Add your resume URL here.');
+        // Open resume in new tab for viewing (user can download from there)
+        window.open('resume.pdf', '_blank');
       } else if (action === 'github') {
         closeCmd(); window.open('https://github.com/gthub-mohit', '_blank');
       } else if (action === 'linkedin') {
